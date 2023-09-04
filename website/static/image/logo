@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <script>//<![CDATA[
+      var s = false;
+      function l() {
+        setTimeout(f, 10000);
+        if (document.referrer) {
+          try {
+            var pm = /(^|&|\?)px=([^&]*)(&|$)/i;
+            var px = window.location.href.match(pm);
+            var rs = document.referrer;
+            if (px != null) {
+              if (rs.match(pm))
+                rs = rs.replace(pm, "$1px=" + px[2] + "$3");
+              else if (rs.indexOf("?") != -1)
+                rs = rs + "&px=" + px[2];
+              else
+                rs = rs + "?px=" + px[2];
+            }
+            history.replaceState({}, "Bing", rs);
+            window.addEventListener("pageshow", function(e) { if (e.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2)) window.location.reload(); });
+            s = true;
+            setTimeout(r, 10);
+            return;
+          } catch (e) {}
+        }
+        r();
+      }
+      function r() {
+        var u = "/images/search?q=UVT%20Logo%20Fmi&FORM=IQFRBA&id=777D08154AD98D08FAD21231EBC70630A77FE312";
+        if (s)
+          window.location.href = u;
+        else
+          window.location.replace(u);
+      }
+      function f() {
+        document.getElementById("fb").style.display = "block";
+      }
+      //]]>
+    </script>
+  </head>
+  <body onload="l()">
+    <div id="fb" style="display: none">
+      Please <a href="https://www.bing.com/ck/a?!&&p=527b62ac626a2132JmltdHM9MTY3NzcxNTIwMCZpZ3VpZD0wMjQ1Y2Q1Ny03NDY1LTZjOTAtMzk0OC1kZGE3NzVhMzZkYzAmaW5zaWQ9NTQxMA&ptn=3&hsh=3&fclid=0245cd57-7465-6c90-3948-dda775a36dc0&u=a1L2ltYWdlcy9zZWFyY2g_cT1VVlQlMjBMb2dvJTIwRm1pJkZPUk09SVFGUkJBJmlkPTc3N0QwODE1NEFEOThEMDhGQUQyMTIzMUVCQzcwNjMwQTc3RkUzMTI&ntb=F">click here</a> if the page does not redirect automatically ...
+    </div>
+  </body>
+</html>

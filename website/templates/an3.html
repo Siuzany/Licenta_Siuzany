@@ -1,0 +1,196 @@
+{% extends "base.html" %} {% block title %}Form3{% endblock %}
+{% block css %} <link rel="stylesheet" type="text/css" href="../static/form.css">  {% endblock %}
+{% block content%}
+<div class="container">
+<form action="/submit_form3" method="POST">
+    <div class="an_studi">
+    <p>An de Studiu:</p>
+        <input type="radio" class="checkbox-round"  id="an1" name="an" value="1">
+        <label for="an1">1</label><br>
+           <input type="radio" class="checkbox-round" id="an2" name="an" value="2">
+        <label for="an2">2</label><br>
+           <input type="radio" class="checkbox-round" id="an3" name="an" value="3">
+        <label for="an3">3</label><br>
+    </div>
+      <div>
+            <p>Especializare:</p>
+             <input type="radio" name="especializare" class="especializare" id="especializare1" name="especializare" value="IR">
+             <label>IR</label>
+             <input type="radio" class="especializare" id="especializare2" name="especializare" value="IA" >
+             <label>IA</label>
+             <input type="radio" class="especializare" id="especializare" name="especializare" value="IE">
+             <label>IE</label>
+           </div>
+           <div class="semestrul">
+               <p>Semestrul: </p>
+               <input type="radio" name="sem" value="1" id="sem1">
+               <label for="sem1">1</label>
+               <input type="radio" name="sem" value="2" id="sem2">
+               <label for="sem2">2</label>
+           </div>
+
+    <div class="an2">
+        <p>1- Cât de mult ți-a placut materia de anul 2 semestrul 2</p>
+        <p>Inginerie_soft:</p>
+        <input type="radio"  name="1"  value="1">
+        <label for="2">1</label>
+        <input type="radio"  name="1"  value="2">
+        <label for="2">2</label>
+        <input type="radio"  name="1"  value="3">
+        <label for="2">3</label>
+        <input type="radio"  name="1"  value="4">
+        <label for="2">4</label>
+        <input type="radio"  name="1"  value="5">
+        <label for="2">5</label>
+        <input type="radio"  name="1"  value="6">
+        <label for="2">6</label>
+        <input type="radio"  name="1"  value="7">
+        <label for="2">7</label>
+        <input type="radio"  name="1"  value="8">
+        <label for="2">8</label>
+        <input type="radio" name="1"  value="9">
+        <label for="2">9</label>
+        <input type="radio"  name="1"  value="10">
+        <label for="2">10</label>
+
+
+            <p>Probabilitate_si_statistica:</p>
+        <input type="radio"  name="2"  value="1">
+        <label for="2">1</label>
+        <input type="radio"  name="2"  value="2">
+        <label for="2">2</label>
+        <input type="radio"  name="2"  value="3">
+        <label for="2">3</label>
+        <input type="radio"  name="2"  value="4">
+        <label for="2">4</label>
+        <input type="radio"  name="2"  value="5">
+        <label for="2">5</label>
+        <input type="radio"  name="2"  value="6">
+        <label for="2">6</label>
+        <input type="radio"  name="2"  value="7">
+        <label for="2">7</label>
+        <input type="radio"  name="2"  value="8">
+        <label for="2">8</label>
+        <input type="radio" name="2"  value="9">
+        <label for="2">9</label>
+        <input type="radio"  name="2"  value="10">
+        <label for="2">10</label>
+
+        <p>Retele_de_calculatoare:</p>
+        <input type="radio"  name="3"  value="1">
+        <label for="2">1</label>
+        <input type="radio"  name="3"  value="2">
+        <label for="2">2</label>
+        <input type="radio"  name="3"  value="3">
+        <label for="2">3</label>
+        <input type="radio"  name="3"  value="4">
+        <label for="2">4</label>
+        <input type="radio"  name="3"  value="5">
+        <label for="2">5</label>
+        <input type="radio"  name="3"  value="6">
+        <label for="2">6</label>
+        <input type="radio"  name="3"  value="7">
+        <label for="2">7</label>
+        <input type="radio"  name="3"  value="8">
+        <label for="2">8</label>
+        <input type="radio" name="3"  value="9">
+        <label for="2">9</label>
+        <input type="radio"  name="3"  value="10">
+        <label for="2">10</label>
+
+        <p>Programare_logica_si_functionala:</p>
+        <input type="radio"  name="4"  value="1">
+        <label for="2">1</label>
+        <input type="radio"  name="4"  value="2">
+        <label for="2">2</label>
+        <input type="radio"  name="4"  value="3">
+        <label for="2">3</label>
+        <input type="radio"  name="4"  value="4">
+        <label for="2">4</label>
+        <input type="radio"  name="4"  value="5">
+        <label for="2">5</label>
+        <input type="radio"  name="4"  value="6">
+        <label for="2">6</label>
+        <input type="radio"  name="4"  value="7">
+        <label for="2">7</label>
+        <input type="radio"  name="4"  value="8">
+        <label for="2">8</label>
+        <input type="radio" name="4"  value="9">
+        <label for="2">9</label>
+        <input type="radio"  name="4"  value="10">
+        <label for="2">10</label>
+
+    </div>
+    <div class="an_doi">
+    <p>2- Cât de mult ți-a placut meteria de anul 3 semestrul 1?</p>
+    <p>Ecuatie Diferential:</p>
+        <input type="radio"  name="5"  value="1">
+        <label for="2">1</label>
+        <input type="radio" name="5"  value="2">
+        <label for="2">2</label>
+        <input type="radio"  name="5"  value="3">
+        <label for="2">3</label>
+        <input type="radio"  name="5"  value="4">
+        <label for="2">4</label>
+        <input type="radio"  name="5"  value="5">
+        <label for="2">5</label>
+        <input type="radio"  name="5"  value="6">
+        <label for="2">6</label>
+        <input type="radio"  name="5"  value="7">
+        <label for="2">7</label>
+        <input type="radio"  name="5"  value="8">
+        <label for="2">8</label>
+        <input type="radio"  name="5"  value="9">
+        <label for="2">9</label>
+        <input type="radio"  name="5"  value="10">
+        <label for="2">10</label>
+
+    </div>
+    <p>Inteligenta Artificiala:</p>
+        <input type="radio"  name="6"  value="1">
+        <label for="2">1</label>
+        <input type="radio" id="2" name="6"  value="2">
+        <label for="2">2</label>
+        <input type="radio" id="3" name="6"  value="3">
+        <label for="2">3</label>
+        <input type="radio" id="4" name="6"  value="4">
+        <label for="2">4</label>
+        <input type="radio" id="5" name="6"  value="5">
+        <label for="2">5</label>
+        <input type="radio" id="6" name="6"  value="6">
+        <label for="2">6</label>
+        <input type="radio" id="7" name="6"  value="7">
+        <label for="2">7</label>
+        <input type="radio" id="8" name="6"  value="8">
+        <label for="2">8</label>
+        <input type="radio" id="9" name="6"  value="9">
+        <label for="2">9</label>
+        <input type="radio" id="10" name="6"  value="10">
+        <label for="2">10</label>
+
+
+    <div class="job">
+        <p>Jobu-ri de interes:<p>
+        <input type="checkbox" id="job1" name="job" value="Data Analyst">
+                <label for="job1"> Data Analyst</label><br>
+                <input type="checkbox" id="job2" name="job" value="Data Scientist">
+                <label for="job2"> Data Scientist </label><br>
+                <input type="checkbox" id="job3" name="job" value="Tester">
+                <label for="job3"> Tester </label><br>
+                <input type="checkbox" id="job4" name="job" value="Dezvoltator">
+                <label for="job4"> Dezvoltator Software </label><br>
+                <input type="checkbox" id="job5" name="job" value="Frontend Engineer">
+                <label for="job5"> Frontend Engineer </label><br>
+                <input type="checkbox" id="job6" name="job" value="Backend Engineer">
+                <label for="job6"> Backend Engineer </label><br>
+                <input type="checkbox" id="job7" name="job" value="Inginer de învățare automată">
+                <label for="job7"> Inginer de învățare automată </label><br>
+                <input type="checkbox" id="job8" name="job" value="Tehnician de securitate">
+                <label for="job8">Tehnician de securitate </label><br>
+                <input type="checkbox" id="job9" name="job" value="Webdesigner">
+                <label for="job9">Webdesigner </label><br>
+    </div>
+    <input class="submitbt" type="submit" value="Submit">
+</form>
+</div>
+{% endblock%}

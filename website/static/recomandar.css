@@ -1,0 +1,58 @@
+.recomendacoes {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    height: 150px;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.recomendacoes h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.recomendacoes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recomendacoes li {
+    margin-bottom: 5px;
+}
+
+/*.buttao{*/
+/*    margin-left: 300px;*/
+/*    background-color: darkslategrey;*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    !*padding-top: 30px;*!*/
+/*    margin-top: auto;*/
+/*}*/
+
+
+/*.buttao{*/
+/*    border: 1px solid darkslategrey;*/
+/*    padding: 5px 20px;*/
+/*    color: #fff;*/
+/*    !*transition: 0.5 ease;*!*/
+/*    font-size: 18px;*/
+/*    text-decoration: none;*/
+/*    margin-top: 50px;*/
+/*}*/
+
+.buttao {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #45a049;
+}
+
+
+.buttao:hover{
+    background-color: darkslategrey;
+    color: #fff;
+
+}

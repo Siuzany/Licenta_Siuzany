@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}recomendacao{% endblock %}
+{% block css %} <link rel="stylesheet" type="text/css" href="../static/recomandar.css">  {% endblock %}
+
+{% block content %}
+<div class="recomendacoes">
+<div>
+    <h1>Discipline Recomandate:</h1>
+    <ul>
+        {% for disciplina in disciplinas %}
+        <li>{{ disciplina }}</li>
+        {% endfor %}
+    </ul>
+
+
+</div>
+ <div>
+    <a href="/alege" class="buttao">Alege Discipline</a>
+ </div>
+</div>
+{% endblock %}

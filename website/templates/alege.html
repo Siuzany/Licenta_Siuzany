@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+<!--{% block css %} <link rel="stylesheet" type="text/css" href="../static/form.css">  {% endblock %}-->
+{% block content%}
+<div class="alege">
+{#    <form action="https://formsubmit.co/siuzany.tome00@e-uvt.ro" method="POST">#}
+    <form action="/alegerea" method="POST">
+        <label for="nume">Nume:</label>
+        <input type="text" name="nume" id="nume" value="{{ user.nume }}"></p>
+        <label for="prenume">Prenume</label>
+        <input type="text" name="prenume" id="prenume" value="{{ user.prenume }}"></p>
+
+        <label for="especializare">Especializare:</label>
+        <input type="radio" name="especializare" class="especializare" id="especializare1"  value="IR" {% if user.especializare == 'IR' %} checked {% endif %}><label>IR</label>
+        <input type="radio" class="especializare" id="especializare2" name="especializare" value="IA" {% if user.especializare == 'IA' %} checked {% endif %} ><label>IA</label>
+        <input type="radio" class="especializare" id="especializare" name="especializare" value="IE" {% if user.especializare == 'IE' %} checked {% endif %}><label>IE</label>
+        <div class="an_studi">
+            <p>An de Studiu:</p>
+                <input type="radio" class="checkbox-round"  id="an1" name="an" value="1" {% if user.an_studiu == 1 %} checked {% endif %}>
+                <label for="an1">1</label><br>
+                   <input type="radio" class="checkbox-round" id="an2" name="an" value="2" {% if user.an_studiu == 2 %} checked {% endif %}>
+                <label for="an2">2</label><br>
+                   <input type="radio" class="checkbox-round" id="an3" name="an" value="3" {% if user.an_studiu == 3 %} checked {% endif %}>
+                <label for="an3">3</label><br>
+            </div>
+         <div class="semestrul">
+               <p>Semestrul: </p>
+               <input type="radio" name="sem" value="1" id="sem1" class="semestre-selected" onclick="mostrarValorRadio(this)">
+               <label for="sem1">1</label>
+               <input type="radio" name="sem" value="2" id="sem2" class="semestre-selected" onclick="mostrarValorRadio(this)">
+               <label for="sem2">2</label>
+           </div>
+        <div class="semestrul1">
+        <h4>Alege materii pentru samestru 1:</h4>
+        <label for="disciplina1">Prima Disciplina:</label>
+            <input type="text" name="disciplina1" id="d1">
+        <label for="disciplina2">Al doilea Disciplina:</label>
+            <input type="text" name="disciplina2" id="d2"></label>
+        </div>
+
+        <div class="semestrul2">
+        <h4>Alege materii pentru samestru 2  :</h4>
+        <label for="disciplina3">Prima Disciplina:</label>
+            <input type="text" name="disciplina3" id="d3">
+        <label for="disciplina4">Al doilea Disciplina:</label>
+            <input type="text" name="disciplina4" id="d4">
+{#        <p><input type="submit" value="Trimite"></p>#}
+        </div>
+        <p><input type="submit" value="Trimite"></p>
+    </form>
+</div>
+
+{% endblock %}

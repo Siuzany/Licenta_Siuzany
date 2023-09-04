@@ -1,0 +1,71 @@
+form{
+    background-color: #f9f9f9;
+    width: 50%;
+    margin-top: 110px;
+    margin-left: 30%;
+    padding-left: 70px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(123, 190, 65, 0.616);
+
+}
+
+    /*.container {*/
+    /*  box-shadow: 5px 5px 15px rgb(123, 190, 65, 0.616);*/
+
+    /*  max-width: 400px;*/
+    /*  margin: 0 auto;*/
+    /*  padding: 20px;*/
+    /*  background-color: #f2f2f2;*/
+    /*  border-radius: 5px;*/
+    /*}*/
+
+    .container p {
+      font-weight: bold;
+    }
+
+    .container input[type="radio"],
+    .container input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .submitbt {
+      margin-top: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Estilos opcionais para melhorar a aparência */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      margin-right: 10px;
+    }
+
+
+
+
+
+/*.......bom dele.........*/
+/*.an_un {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  align-items: center;*/
+/*}*/
+
+/*input[type="radio"] {*/
+/*  margin-right: 10px;*/
+/*}*/
+/*p {*/
+/*  margin: 20px 0;*/
+
+/*}*/

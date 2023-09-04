@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.alege{
+    background-color: lightseagreen;
+    width: 30%;
+    height: 60%;
+    margin-left: 30%;
+    margin-top: 20px;
+}

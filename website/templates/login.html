@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block css %} <link rel="stylesheet" type="text/css" href="../static/login.css">  {% endblock %}
+{% block content %}
+    <div class="background-foto">
+        <div class="fo-to">
+            <div class="leftside">
+                <img src="../static/image/student2.jpg" alt="tem">
+            </div>
+            <div class="rightside">
+                <form action="#" method="POST" >
+                    <div class="msg">{{msg}}</div>
+                    <h2>LOGIN</h2>
+                    <div class="input-container"></div>
+                    <div class="input">
+                        <i class="fa fa-user"></i>
+                        <label for="iusu"></label>
+                        <input type="text" name="email" placeholder="Email" required id="iusu">
+                    </div>
+                    <div class="input">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="login">LOGIN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %} {% block title %}Form1{% endblock %}
+<!--{% block css %} <link rel="stylesheet" type="text/css" href="../static/form.css">  {% endblock %}-->
+{% block content%}
+
+<form  method="POST">
+
+  <p>Selectati anul de studiu:</p>
+  <label for="an1"><input type="radio" name="an" id="an1" value="1">Anul 1</label>
+  <br>
+  <label for="an2"><input type="radio" name="an" id="an2" value="2">Anul 2</label>
+  <br>
+  <label for="an3"><input type="radio" name="an" id="an3" value="3">Anul 3</label>
+  <br>
+  <input type="submit" value="Arata discipline">
+
+{#  <p>An de Studiu:</p>#}
+{#            <input type="radio" class="checkbox-round" id="an1" name="an" value="1" {% if an_value == "1" %}checked{% endif %}>#}
+{#            <label for="an1">1</label><br>#}
+{#            <input type="radio" class="checkbox-round" id="an2" name="an" value="2" {% if an_value == "2" %}checked{% endif %}>#}
+{#            <label for="an2">2</label><br>#}
+{#            <input type="radio" class="checkbox-round" id="an3" name="an" value="3" {% if an_value == "3" %}checked{% endif %}>#}
+{#            <label for="an3">3</label><br>#}
+</form>
+
+
+{% endblock %}
+<!--@app.route('/', methods=['GET', 'POST'])-->
+<!--def formulario():-->
+<!--    if request.method == 'POST':-->
+<!--        ano = request.form['ano']-->
+<!--        if ano == '1':-->
+<!--            return redirect(url_for('ano1'))-->
+<!--        elif ano == '2':-->
+<!--            return redirect(url_for('ano2'))-->
+<!--        elif ano == '3':-->
+<!--            return redirect(url_for('ano3'))-->
+<!--    return render_template('formulario.html')-->
